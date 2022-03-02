@@ -1,6 +1,6 @@
 <?php
 
-require './data/movies.php';
+require '../data/movies.php';
 
 ?>
 
