@@ -1,6 +1,6 @@
 <?php
 
-require '../data/movies.php';
+include './data/movies.php';
 
 ?>
 
@@ -15,13 +15,10 @@ require '../data/movies.php';
 </head>
 
 <body>
-  <?php foreach ($movies as $movie) :
-    $m = new Movie($movie['title'], $movie['release_date'], $movie['poster'], $movie['genre'], $movie['vote_avarage']);
-  ?>
-    <article>
-      <h1><?= $m->title ?></h1>
-    </article>
-  <?php endforeach; ?>
+  <article>
+    <h1><?= $movie1->title ?></h1>
+  </article>
+
 </body>
 
 </html>

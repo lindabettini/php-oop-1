@@ -18,6 +18,8 @@ class Movie
   }
 }
 
+
+
 $movie1 = new Movie("Il Signore degli Anelli - La compagnia dell'anello", '18-12-2001', './img/compagnia-dell-anello.jfif', 'Fantasy', 5);
 
 $movie2 = new Movie("Il Signore degli Anelli - Le Due Torri", '18-12-2002', './img/le-due-torri.jfif', 'Fantasy', 5);
