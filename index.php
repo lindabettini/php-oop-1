@@ -16,7 +16,10 @@ include './data/movies.php';
 
 <body>
   <article>
-    <h1><?= $movie1->title ?></h1>
+    <img src="<?= $movie1->poster ?>" alt="<?= $movie1->title ?>">
+    <h3><?= $movie1->title ?></h3>
+    <div><?= $movie1->release_date ?></div>
+    <div>Votato: <br> <?= $movie1->vote_avarage ?></div>
   </article>
 
 </body>
