@@ -17,3 +17,5 @@ class Movie
     $this->vote_avarage = $vote_avarage;
   }
 }
+
+$movie1 -> new Movie("Il Signore degli Anelli - La compagnia dell'anello", '18-12-2001', './img/compagnia-dell-anello.jfif', 'Fantasy', 5);
