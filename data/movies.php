@@ -3,8 +3,17 @@
 class Movie
 {
   public $title;
-  public $year;
+  public $release_date;
   public $poster;
   public $genre;
-  public $quote;
+  public $vote_average;
+
+  public function __construct($title, $release_date, $poster, $genre, $vote_avarage)
+  {
+    $this->title = $title;
+    $this->release_date = $release_date;
+    $this->poster = $poster;
+    $this->genre = $genre;
+    $this->vote_avarage = $vote_avarage;
+  }
 }
