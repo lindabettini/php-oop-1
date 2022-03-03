@@ -1,6 +1,6 @@
 <?php
 
-include './data/movies.php';
+include './data/Movies.php';
 
 ?>
 
@@ -15,13 +15,15 @@ include './data/movies.php';
 </head>
 
 <body>
-  <article>
-    <img src="<?= $movie1->poster ?>" alt="<?= $movie1->title ?>">
-    <h3><?= $movie1->title ?></h3>
-    <div><?= $movie1->release_date ?></div>
-    <div>Votato: <br> <?= $movie1->vote_avarage ?></div>
-  </article>
-
+  <?php foreach ($moviesList as $movie) : ?>
+    <?php $movie = new Movie($movie['title'], $movie['year'], $movie['url'], $movie['genre'], $movie['vote']); ?>
+    <article>
+      <img src="<?= $movie->poster ?>" alt="<?= $movie->title ?>">
+      <h3><?= $movie->title ?></h3>
+      <div><?= $movie->release_date ?></div>
+      <div>Votato: <br> <?= $movie->vote_avarage ?></div>
+    </article>
+  <?php endforeach; ?>
 </body>
 
 </html>
